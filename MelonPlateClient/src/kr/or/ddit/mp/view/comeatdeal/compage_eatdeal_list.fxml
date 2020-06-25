@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anpane_eat_list" prefHeight="1000.0" prefWidth="1080.0" style="-fx-background-color: ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.comeatdeal.ComEatdealController">
+   <children>
+      <ImageView fitHeight="109.0" fitWidth="745.0" layoutX="171.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@comeatdeal.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tb_eatList" layoutX="173.0" layoutY="240.0" prefHeight="324.0" prefWidth="650.0" style="-fx-base: #ffffff;">
+        <columns>
+          <TableColumn fx:id="col_eatSta" prefWidth="84.0" text="상태" style="-fx-alignment: CENTER;"/>
+          <TableColumn fx:id="col_eatName" prefWidth="272.0" text="EAT딜 이름" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_eatPri" prefWidth="129.0" text="금액" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_eatDate" prefWidth="160.0" text="등록날짜" style="-fx-alignment: CENTER;"/>
+        </columns>
+      </TableView>
+      <Pagination fx:id="page_eat" layoutX="173.0" layoutY="240.0" prefHeight="384.0" prefWidth="651.0" />
+      <JFXButton fx:id="btn_insert" layoutX="847.0" layoutY="240.0" onAction="#Clickadd" prefHeight="28.0" prefWidth="81.0" ripplerFill="WHITE" text=" " textFill="#4db26f" />
+      <JFXButton fx:id="btn_delete" layoutX="847.0" layoutY="274.0" onAction="#Clickdel" prefHeight="28.0" prefWidth="81.0" ripplerFill="WHITE" text=" " textFill="#4db26f" />
+   </children>
+</AnchorPane>

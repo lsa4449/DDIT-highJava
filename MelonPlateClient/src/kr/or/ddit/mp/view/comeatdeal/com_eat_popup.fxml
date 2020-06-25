@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="397.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#4db26f" layoutX="45.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EAT딜 등록 신청">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#4db26f" layoutX="28.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label layoutX="41.0" layoutY="86.0" text="EAT딜 이름 : " />
+      <JFXTextField fx:id="txtf_name" focusColor="#01a144" layoutX="133.0" layoutY="82.0" prefHeight="23.0" prefWidth="219.0" unFocusColor="#9a9a9a" />
+      <JFXTextArea fx:id="txta_menu" focusColor="#01a144" layoutX="133.0" layoutY="126.0" prefHeight="142.0" prefWidth="219.0" />
+      <Label layoutX="79.0" layoutY="126.0" text="메뉴 : " />
+      <Label layoutX="41.0" layoutY="286.0" text="EAT딜 수량 : " />
+      <Label layoutX="79.0" layoutY="323.0" text="가격 : " />
+      <JFXTextField fx:id="txtf_total" focusColor="#01a144" layoutX="133.0" layoutY="282.0" prefHeight="23.0" prefWidth="188.0" unFocusColor="#9a9a9a" />
+      <JFXTextField fx:id="txtf_won" alignment="CENTER_RIGHT" focusColor="#01a144" layoutX="133.0" layoutY="317.0" prefHeight="23.0" prefWidth="188.0" unFocusColor="#9a9a9a" />
+      <Label layoutX="331.0" layoutY="323.0" text="원" />
+      <Label layoutX="331.0" layoutY="288.0" text="개" />
+      <JFXButton fx:id="btn_suc" layoutX="90.0" layoutY="410.0" prefHeight="36.0" prefWidth="105.0" style="-fx-border-color: #4db26f;" text="신청 완료" textFill="#4db26f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_can" layoutX="199.0" layoutY="410.0" prefHeight="36.0" prefWidth="105.0" style="-fx-border-color: #4db26f;" text="신청 취소" textFill="#4db26f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="79.0" layoutY="355.0" text="사진 : " />
+      <JFXTextField fx:id="txtf_pic" focusColor="#01a144" layoutX="133.0" layoutY="349.0" prefHeight="23.0" prefWidth="150.0" unFocusColor="#9a9a9a" />
+      <JFXButton fx:id="btn_find" layoutX="291.0" layoutY="352.0" text="찾아보기" textFill="#909090">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

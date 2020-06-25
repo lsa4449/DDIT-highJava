@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="goodcom_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1050.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.eatdealhome.EatdealHomeController">
+   <children>
+      <ImageView fitHeight="148.0" fitWidth="236.0" layoutX="536.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="logoMelonPlate3.png" />
+         </image>
+      </ImageView>
+      <Line endX="500.0" layoutX="640.0" layoutY="181.0" startX="-500.0" stroke="#4db06e" strokeLineCap="ROUND" />
+      <AnchorPane layoutX="215.0" layoutY="239.0" prefHeight="338.0" prefWidth="850.0">
+         <children>
+            <ImageView fx:id="imgDeal" fitHeight="310.0" fitWidth="421.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fill="#3f6846" layoutX="349.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Text>
+            <Text fx:id="txt_name" fill="#3f6846" layoutX="378.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="잇딜이름자리">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fill="#3f6846" layoutX="349.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="# 맛집">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="txtf_comName" alignment="CENTER_RIGHT" focusColor="#264c2d" layoutX="349.0" layoutY="210.0" prefHeight="23.0" prefWidth="187.0" unFocusColor="#264c2d">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtf_price" alignment="CENTER_RIGHT" focusColor="#264c2d" layoutX="349.0" layoutY="273.0" prefHeight="23.0" prefWidth="169.0" unFocusColor="#264c2d">
+               <font>
+                  <Font size="19.0" />
+               </font></JFXTextField>
+            <Text fill="#3f6846" layoutX="349.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="# 가격">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#6b6b6b" layoutX="524.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="원" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="636.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@eatqa.png" />
+               </image></ImageView>
+            <Button fx:id="btn_goeatqa" onAction="#gogoeatqa" layoutX="663.0" layoutY="240.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="169.0" style="-fx-background-color: transparent;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="215.0" layoutY="610.0" prefHeight="252.0" prefWidth="568.0" style="-fx-background-color: #F4F5F4; -fx-border-color: #6e7e63;">
+         <children>
+            <Text layoutX="32.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="※ 유의사항 (꼭! 확인해주세요 )">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text fx:id="txt_con1" layoutX="32.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cont1들어가는 곳">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="44.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="사용 가능 기간 : 구매 후 한 달" />
+            <Text layoutX="44.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="양도 및 재판매가 불가능한 상품입니다." />
+            <Text layoutX="32.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="※ 사용방법">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="43.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="잇딜 구매 후 핸드폰으로 전송되는 쿠폰 번호를 보여주세요." />
+            <Text layoutX="43.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="사용완료된 쿠폰은 재사용이 불가합니다." />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="802.0" layoutY="610.0" prefHeight="252.0" prefWidth="263.0" style="-fx-background-color: #ffffff; -fx-border-color: #6e7e63;">
+         <children>
+            <Text fill="#3f6846" layoutX="132.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="# 구매가능 개수">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="txt_qty" fill="WHITE" layoutX="147.0" layoutY="215.0" stroke="#4db26f" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" text="99" textAlignment="RIGHT">
+               <font>
+                  <Font size="57.0" />
+               </font>
+            </Text>
+            <Text fill="#8a8a8a" layoutX="230.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="개">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <JFXComboBox fx:id="com_qty" focusColor="#4db26f" layoutX="111.0" layoutY="14.0" prefHeight="23.0" prefWidth="128.0" promptText="수량선택" unFocusColor="#c3c3c3" visibleRowCount="6" />
+            <JFXButton fx:id="btn_cart" layoutX="74.0" layoutY="50.0" onAction="#addCart" prefHeight="60.0" prefWidth="60.0" ripplerFill="#d0ffc0" style="-fx-border-color: #ffffff;" text=" ">
+               <graphic>
+      					<ImageView fitHeight="60" fitWidth="60">
+      						<image>
+      							<Image url="eatdealhome/mel_cart.png" />
+      						</image>
+      					</ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="btn_buy" layoutX="160.0" layoutY="50.0" prefHeight="60.0" prefWidth="60.0" ripplerFill="#d0ffc0" style="-fx-border-color: #ffffff;" text=" ">
+               <graphic>
+      					<ImageView fitHeight="60" fitWidth="60">
+      						<image>
+      							<Image url="eatdealhome/mel_buy.png" />
+      						</image>
+      					</ImageView>
+               </graphic></JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

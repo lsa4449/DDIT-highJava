@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainBorder" prefHeight="1000.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.pageadmin.MyAdminPageController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="1000.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@my_admin.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_adm_member" layoutX="36.0" layoutY="312.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btn_adm_join" layoutX="36.0" layoutY="342.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btn_adm_black" layoutX="36.0" layoutY="370.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btn_adm_holic" layoutX="36.0" layoutY="398.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btn_adm_nice" layoutX="36.0" layoutY="426.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btn_adm_eatdeal" layoutX="36.0" layoutY="526.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="1000.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@mypage_center.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <ImageView fitHeight="158.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@mypage_top.png" />
+         </image>
+      </ImageView>
+   </top>
+</BorderPane>

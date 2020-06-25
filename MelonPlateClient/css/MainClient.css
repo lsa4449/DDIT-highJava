@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+#top_eat{
+	 -fx-font-family:url("../font/OSeongandHanEum-Regular.ttf");
+    -fx-font-weight: bold;
+    -fx-font-size: 14
+}
+

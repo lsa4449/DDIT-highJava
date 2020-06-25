@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anpane_eat_list" prefHeight="1000.0" prefWidth="1080.0" style="-fx-background-color: ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.qnacomeatdeal.QnaComeatdealController">
+   <children>
+      <ImageView fitHeight="124.0" fitWidth="789.0" layoutX="141.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@comeatqa.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tb_eatList" layoutX="161.0" layoutY="251.0" prefHeight="383.0" prefWidth="758.0" style="-fx-base: #ffffff;">
+        <columns>
+          <TableColumn fx:id="col_qnaSta" prefWidth="74.0" text="상태" style="-fx-alignment: CENTER;"/>
+          <TableColumn fx:id="col_qnaTitle" prefWidth="273.0" text="Q&amp;A제목" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_eatName" prefWidth="128.0" text="EAT딜 명" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_qDate" prefWidth="140.0" text="등록날짜" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_aDate" prefWidth="140.0" text="답변날짜" style="-fx-alignment: CENTER;"/>
+        </columns>
+      </TableView>
+      <Pagination fx:id="page_qna" layoutX="161.0" layoutY="249.0" prefHeight="441.0" prefWidth="758.0" />
+      <JFXButton fx:id="btn_all" layoutX="167.0" layoutY="209.0" onAction="#Clickall" prefHeight="28.0" prefWidth="64.0" ripplerFill="WHITE" text=" " textFill="#4db26f" />
+      <JFXButton fx:id="btn_noans" layoutX="243.0" layoutY="209.0" onAction="#Clicknot" prefHeight="28.0" prefWidth="114.0" ripplerFill="WHITE" text="   " textFill="#4db26f" />
+      <JFXButton fx:id="btn_ans" layoutX="785.0" layoutY="209.0" onAction="#Clickanswer" prefHeight="28.0" prefWidth="64.0" ripplerFill="WHITE" text="        " textFill="#4db26f" />
+      <JFXButton fx:id="btn_view" layoutX="853.0" layoutY="209.0" onAction="#Clickview" prefHeight="28.0" prefWidth="64.0" ripplerFill="WHITE" text="       " textFill="#4db26f" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="an_adminMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1080.0" style="-fx-background-color: ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.admin.AdminMainController">
+   <children>
+      <ImageView fitHeight="94.0" fitWidth="1072.0" layoutX="8.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@admin_all_top.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableview" layoutX="65.0" layoutY="151.0" prefHeight="499.0" prefWidth="951.0" style="-fx-background-color: transparent;">
+        <columns>
+          <TableColumn fx:id="tb_grade" prefWidth="162.0" text="유형" style="-fx-alignment: CENTER;" />
+          <TableColumn fx:id="tb_name" prefWidth="175.0" text="이름" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="tb_hp" prefWidth="192.0" text="연락처" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="tb_melon" prefWidth="193.0" text="멜로니지" style="-fx-alignment: CENTER;" />
+            <TableColumn fx:id="tb_com" prefWidth="220.0" text="업체명" style="-fx-alignment: CENTER;" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_addMember" layoutX="757.0" layoutY="111.0" mnemonicParsing="false" onAction="#addAdmin" prefHeight="24.0" prefWidth="70.0" style="-fx-background-color: transparent;" textAlignment="CENTER" textFill="#4db26f" />
+      <Button fx:id="btn_member" layoutX="898.0" layoutY="112.0" mnemonicParsing="false" onAction="#inquiryMem" prefHeight="18.0" prefWidth="53.0" style="-fx-background-color: transparent;" textAlignment="CENTER" textFill="#4db26f" />
+      <Button fx:id="btn_deleteMember" layoutX="833.0" layoutY="111.0" mnemonicParsing="false" onAction="#deleteMember" prefHeight="24.0" prefWidth="60.0" style="-fx-background-color: transparent;" textFill="#4db26f" />
+      <Button fx:id="btn_company" layoutX="957.0" layoutY="111.0" mnemonicParsing="false" onAction="#inquiryCom" prefHeight="24.0" prefWidth="60.0" style="-fx-background-color: transparent;" textAlignment="CENTER" textFill="#4db26f" />
+      <HBox layoutX="687.0" layoutY="109.0" spacing="10.0" />
+      <Pagination fx:id="page_allMember" layoutX="66.0" layoutY="149.0" prefHeight="546.0" prefWidth="951.0" style="-fx-background-color: transparent;" />
+   </children>
+</AnchorPane>

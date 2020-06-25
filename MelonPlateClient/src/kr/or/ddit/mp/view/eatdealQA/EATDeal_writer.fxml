@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ap_write" prefHeight="686.0" prefWidth="678.0" style="-fx-background-color: #ffffff; -fx-border-color: #4db26f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="61.0" layoutY="489.0" prefHeight="18.0" prefWidth="605.0" text="* 상품과 관계없는 글, 양도, 광고성, 욕설, 비방, 도배 등의 글은 예고없이 삭제됩니다." textFill="#999999">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="79.0" prefHeight="18.0" prefWidth="288.0" text="* 상품에 대해 궁금한 점을 물어보세요 :)" textFill="#999999">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtf_w_title" layoutX="61.0" layoutY="119.0" prefHeight="34.0" prefWidth="552.0" style="-fx-border-color: CCCCCC;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btn_w_cancle" layoutX="355.0" layoutY="596.0" prefHeight="42.0" prefWidth="109.0" style="-fx-background-color: FFFFFF; -fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #4db26f;" text="취 소">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_w_finish" layoutX="192.0" layoutY="596.0" prefHeight="42.0" prefWidth="109.0" style="-fx-background-color: #4db26f; -fx-background-radius: 40;" text="완 료" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="txta_w_cont" layoutX="61.0" layoutY="174.0" prefHeight="293.0" prefWidth="552.0" style="-fx-border-color: CCCCCC;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextArea>
+      <Text fill="#4db26f" layoutX="61.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="# EAT딜 문의하기" wrappingWidth="339.564453125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ap_home" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.review.ReviewAdminController">
+   <children>
+      <AnchorPane fx:id="an_in" layoutX="140.0" layoutY="72.0" prefHeight="686.0" prefWidth="1001.0" style="-fx-border-color: #000000;">
+         <children>
+            <TableView fx:id="tb_adminReview" layoutX="43.0" layoutY="98.0" prefHeight="395.0" prefWidth="911.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;">
+              <columns>
+                <TableColumn fx:id="col_reWriter" minWidth="67.0" prefWidth="91.0" text="작성자" style="-fx-alignment: CENTER;" />
+                  <TableColumn fx:id="col_reTitle" prefWidth="213.0" text="제목"  style="-fx-alignment: CENTER;"/>
+                  <TableColumn fx:id="col_reCont" minWidth="105.0" prefWidth="273.0" text="내용"  style="-fx-alignment: CENTER;"/>
+                  <TableColumn fx:id="col_reStore" minWidth="100.0" prefWidth="118.0" text="업체명" style="-fx-alignment: CENTER;" />
+                  <TableColumn fx:id="col_reDate" prefWidth="104.0" text="작성일"style="-fx-alignment: CENTER;" />
+                  <TableColumn fx:id="col_reDown" minWidth="30.0" prefWidth="110.0" text="신고횟수" style="-fx-alignment: CENTER;"/>
+              </columns>
+            </TableView>
+            <Pagination fx:id="page_adminReview" layoutX="33.0" layoutY="96.0" prefHeight="467.0" prefWidth="935.0" />
+            <Text fill="#4db26f" layoutX="34.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#리뷰 관리">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btn_del" layoutX="900.0" layoutY="58.0" style="-fx-background-color: #FFFFFF; -fx-border-color: CCCCCC; -fx-border-radius: 10; -fx-background-radius: 10;" text="삭 제" textFill="#4db26f" />
+            <JFXButton fx:id="btn_show" layoutX="837.0" layoutY="58.0" style="-fx-background-color: #4db26f; -fx-border-color: CCCCCC; -fx-border-radius: 10; -fx-background-radius: 10;" text="보 기" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

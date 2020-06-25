@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!-- namespace속성 : 아래에서 작성한 SQL을 호출할 때 같이 사용된다. -->			
+<sqlMap namespace="board">
+	<!-- 
+		이 영역에 sql문에 맞는 태그를 사용하여 SQL문을 기술한다.
+		
+		사용할 수 있는 기본적인 태그들
+		<select> ~~~ </select>
+		<insert> ~~~ </insert>
+		<update> ~~~ </update>
+		<delete> ~~~ </delete>
+	 -->
+	 
+	 <!-- 
+	 	위 태그에서 사용되는 속성들
+	 		1) id속성 : 해당 태그를 호출할 때 <sqlMap>태그의 namespace와
+	 							  연결하여 사용하는 이름
+	 		2) parameterClass속성 : sql문에 사용될 데이터가 들어있는 객체를
+	 							  지정한다. 
+	 							  (보통 VO클래스, 자바의 자료형이름 등이 사용된다.)
+	 							  (typeAlia로 지정한 alias명을 사용할 수 있다.)							    
+			3) resultClass속성 : select문을 실행한 결과를 담을 객체를 지정한다.
+								 (보통 VO클래스나 자바의 자료형이름을 사용한다.)							 
+	 -->
+	<insert id="insertBoard" parameterClass="bVO">
+	insert into jdbc_board values
+	(board_seq.nextval, #board_title#, #board_writer#, sysdate, #board_content#)
+	</insert>
+	
+	<update id="updateBoard" parameterClass="bVO">
+	update jdbc_board set board_title = #board_title#, board_writer = #board_writer#, 
+						  board_content = #board_content# where board_no = #board_no#
+	</update>
+	
+	<delete id="deleteBoard" parameterClass="int">
+	delete from jdbc_board where board_no = #board_no#
+	</delete>
+	
+	<select id="getBoardAll" resultClass="bVO">
+	select * from jdbc_board
+	</select>
+	
+	<select id="getBoard" parameterClass="int" resultClass="bVO">
+	select count(*) from jdbc_board where board_no = #board_no#
+	</select>
+	
+	<select id="getSearchBoard" parameterClass="bVO" resultClass="bVO">
+	select * from jdbc_board where 1 = 1
+	<isNotEmpty property="board_no">
+		and board_no = #board_no#
+	</isNotEmpty>
+
+	<isNotEmpty property="board_title">
+		and board_title = #board_title#
+	</isNotEmpty>
+	
+	<isNotEmpty property="board_writer">
+		and board_writer = #board_writer# 
+	</isNotEmpty>
+	
+<!-- 	<isNotEmpty property="board_date">
+		and board_date = #board_date# 
+	</isNotEmpty> -->
+	
+	<isNotEmpty property="board_content">
+		and board_content = #board_content# 
+	</isNotEmpty>
+	
+	</select>
+</sqlMap>			
+
+
+
+
+

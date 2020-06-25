@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1080.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.mypageEatDealQnA.MypageEatDealQnAController">
+   <children>
+      <TableView fx:id="tableview" layoutX="65.0" layoutY="151.0" prefHeight="499.0" prefWidth="951.0">
+        <columns>
+            <TableColumn fx:id="col_QnANo" prefWidth="72.0" style="-fx-alignment: CENTER;" text="번 호" style="-fx-alignment: CENTER;"/>
+          <TableColumn fx:id="col_QnATitle" prefWidth="230.0" text="제 목" style="-fx-alignment: CENTER;"/>
+          <TableColumn fx:id="col_QnAContent" prefWidth="417.0" text="내 용" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_QnAIndate" minWidth="0.0" prefWidth="150.0" text="작성일" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_answerStatus" prefWidth="81.0" style="-fx-alignment: CENTER;" text="답변 여부" style="-fx-alignment: CENTER;"/>
+            
+        </columns>
+      </TableView>
+      <Pagination fx:id="page_allMember" layoutX="66.0" layoutY="149.0" prefHeight="546.0" prefWidth="951.0" />
+      <Label layoutX="66.0" layoutY="114.0" prefHeight="26.0" prefWidth="196.0" text="#나의 EAT 딜 QnA" textFill="#4db26f">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

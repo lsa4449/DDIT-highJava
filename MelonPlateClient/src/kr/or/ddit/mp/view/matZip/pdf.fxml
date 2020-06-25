@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ap_write" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.matZip.PdfController">
+   <children>
+      <AnchorPane fx:id="ap_write1" layoutX="10.0" layoutY="10.0" prefHeight="380.0" prefWidth="380.0" style="-fx-background-color: #ffffff; -fx-border-color: #4db26f;">
+         <children>
+            <ImageView fx:id="mel_home" fitHeight="72.0" fitWidth="85.0" layoutX="149.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@melon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_reNameDwn" layoutX="84.0" layoutY="228.0" mnemonicParsing="false" onAction="#reNameDwn" prefHeight="38.0" prefWidth="214.0" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" text="우수맛집 인증서 다른 이름으로 저장" />
+            <Button fx:id="btn_dwn" layoutX="123.0" layoutY="129.0" mnemonicParsing="false" onAction="#dwn" prefHeight="38.0" prefWidth="134.0" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" text="우수맛집 인증서 저장" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

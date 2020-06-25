@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="img"/>
+	<classpathentry kind="src" path="css"/>
+	<classpathentry kind="lib" path="lib/ibatis-2.3.4.726.jar"/>
+	<classpathentry kind="lib" path="lib/jfoenix-8.0.8.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="lib/local_policy.jar"/>
+	<classpathentry kind="lib" path="lib/mail-1.4.7.jar"/>
+	<classpathentry kind="lib" path="lib/US_export_policy.jar"/>
+	<classpathentry kind="lib" path="lib/itext-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/iTextAsian.jar"/>
+	<classpathentry kind="lib" path="lib/assistant-6.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/core-6.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/javaSDK-2.2-sources.jar"/>
+	<classpathentry kind="lib" path="lib/logging-interceptor-3.11.0.jar"/>
+	<classpathentry kind="lib" path="lib/okhttp-3.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/okhttp-urlconnection-3.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="lib/speech-to-text-6.11.0.jar"/>
+	<classpathentry kind="lib" path="lib/text-to-speech-6.11.0.jar"/>
+	<classpathentry kind="lib" path="lib/visual-recognition-6.2.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<ScrollPane prefHeight="1024.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.main.TopMemberController">
+   <content>
+      <BorderPane fx:id="mainBorder" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;">
+         <top>
+            <HBox alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="top_gohome" onAction="#ClickHome" prefHeight="23.0" prefWidth="109.0" ripplerFill="#5cd300" text="메인으로가기" textFill="#4db26f" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="701.796875" />
+                  <JFXButton fx:id="top_setzone" ripplerFill="#5cd300" text="관심지역설정" textFill="#4db26f" />
+                  <JFXButton fx:id="top_eat" ripplerFill="#5cd300" text="EAT딜" textFill="#4db26f" />
+                  <JFXButton fx:id="top_melony" onAction="#GoChatBot" ripplerFill="#5cd300" text="멜로니문의" textFill="#4db26f" />
+                  <JFXButton fx:id="top_cs" ripplerFill="#5cd300" text="실시간문의" textFill="#4db26f" />
+                  <JFXButton fx:id="top_mypage" onAction="#goMypage" ripplerFill="#5cd300" text="마이페이지" textFill="#4db26f" />
+                  <JFXButton fx:id="top_logout" onAction="#logout" ripplerFill="#5cd300" text="로그아웃" textFill="#4db26f" />
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+         </top>
+         <center>
+            <AnchorPane fx:id="centerborder" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="1000.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="main/member_main.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="txtf_searchmain" focusColor="#078600" layoutX="500.0" layoutY="185.0" prefHeight="30.0" prefWidth="236.0" promptText="   맛집 이름, 동네, 메뉴" style="-fx-background-color: #ffffff;" unFocusColor="#a1a1a1" />
+                  <JFXButton fx:id="btn_searchmain" layoutX="747.0" layoutY="185.0" onAction="#SearchClick" prefHeight="31.0" prefWidth="55.0" style="-fx-background-color: #02a700;" text="검색" textFill="WHITE" />
+                  <VBox layoutX="98.0" layoutY="428.0" prefHeight="307.0" prefWidth="100.0" spacing="14.0">
+                     <children>
+                        <Text fx:id="txt_top1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txt_top2" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txt_top3" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txt_top4" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txt_top5" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txt_top6" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txt_top7" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txt_top8" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txt_top9" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="txt_top10" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="351.0" layoutY="407.0" spacing="10.0">
+                     <children>
+                        <AnchorPane fx:id="an_main_eat1" layoutX="351.0" layoutY="407.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ffffff; ">
+                           <children>
+                              <ImageView fx:id="img_besteat1" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="an_main_eat2" layoutX="506.0" layoutY="407.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ffffff; ">
+                           <children>
+                              <ImageView fx:id="img_besteat2" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="an_main_eat3" layoutX="661.0" layoutY="407.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <ImageView fx:id="img_besteat3" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="an_main_eat4" layoutX="816.0" layoutY="407.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ffffff; ">
+                           <children>
+                              <ImageView fx:id="img_besteat4" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="an_main_eat5" layoutX="971.0" layoutY="407.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ffffff; ">
+                           <children>
+                              <ImageView fx:id="img_besteat5" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                           </children></AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="351.0" layoutY="676.0" spacing="10.0">
+                     <children>
+                        <AnchorPane fx:id="an_main_food1" layoutX="351.0" layoutY="407.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ffffff; ">
+                           <children>
+                              <ImageView fx:id="img_bestcom1" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="an_main_food2" layoutX="506.0" layoutY="407.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ffffff; ">
+                           <children>
+                              <ImageView fx:id="img_bestcom2" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="an_main_food3" layoutX="661.0" layoutY="407.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ffffff; ">
+                           <children>
+                              <ImageView fx:id="img_bestcom3" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="an_main_food4" layoutX="816.0" layoutY="407.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ffffff; ">
+                           <children>
+                              <ImageView fx:id="img_bestcom4" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                           </children></AnchorPane>
+                        <AnchorPane fx:id="an_main_food5" layoutX="971.0" layoutY="407.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #ffffff; ">
+                           <children>
+                              <ImageView fx:id="img_bestcom5" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                           </children></AnchorPane>
+                     </children>
+                  </HBox>
+                  <Button fx:id="btn_goeatmain" layoutX="1073.0" layoutY="368.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="더보기 ▶" textFill="#686868" />
+                  <Button fx:id="btn_gofoodmain" layoutX="1073.0" layoutY="640.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="더보기 ▶" textFill="WHITE" />
+                  <Text fx:id="txt_eatname1" fill="#8d8d8d" layoutX="351.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="152.12109375" />
+                  <Text fx:id="txt_eatname2" fill="#8d8d8d" layoutX="514.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="152.12109375" />
+                  <Text fx:id="txt_eatname3" fill="#8d8d8d" layoutX="675.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="152.12109375" />
+                  <Text fx:id="txt_eatname4" fill="#8d8d8d" layoutX="838.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="152.12109375" />
+                  <Text fx:id="txt_eatname5" fill="#8d8d8d" layoutX="998.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="152.12109375" />
+                  <Text fx:id="txt_comename5" fill="#8d8d8d" layoutX="998.0" layoutY="848.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="152.12109375" />
+                  <Text fx:id="txt_comename4" fill="#8d8d8d" layoutX="838.0" layoutY="848.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="152.12109375" />
+                  <Text fx:id="txt_comename3" fill="#8d8d8d" layoutX="675.0" layoutY="847.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="152.12109375" />
+                  <Text fx:id="txt_comename2" fill="#8d8d8d" layoutX="514.0" layoutY="848.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="152.12109375" />
+                  <Text fx:id="txt_comename1" fill="#8d8d8d" layoutX="351.0" layoutY="848.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="152.12109375" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </content>
+</ScrollPane>

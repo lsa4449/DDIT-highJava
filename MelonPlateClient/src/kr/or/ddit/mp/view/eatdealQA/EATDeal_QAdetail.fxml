@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anc_out" prefHeight="576.0" prefWidth="705.0" style="-fx-background-color: #ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="25.0" layoutY="20.0" text="# EAT딜 QA 상세보기" textFill="#4db26f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anc_in" layoutX="29.0" layoutY="55.0" prefHeight="441.0" prefWidth="642.0" style="-fx-border-color: #4db26f; -fx-background-color: FFFFFF;">
+         <children>
+            <Label fx:id="lab_date" layoutX="104.0" layoutY="98.0" prefHeight="15.0" prefWidth="182.0" text="게시글 날짜" textFill="#cccccc" />
+            <ImageView fx:id="img_who" fitHeight="53.0" fitWidth="61.0" layoutX="28.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@who.png" />
+               </image></ImageView>
+            <ImageView fx:id="img_status" fitHeight="53.0" fitWidth="53.0" layoutX="548.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXTextField fx:id="txtf_cont" layoutX="29.0" layoutY="127.0" prefHeight="185.0" prefWidth="584.0" style="-fx-border-color: CCCCCC;" />
+            <JFXTextField fx:id="txtf_title" layoutX="28.0" layoutY="26.0" prefHeight="25.0" prefWidth="434.0" style="-fx-border-color: CCCCCC;" text="QA 제목" />
+            <Label fx:id="lab_nick" layoutX="104.0" layoutY="72.0" prefHeight="15.0" prefWidth="182.0" text="닉네임" textFill="#cccccc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtf_ans" layoutX="29.0" layoutY="347.0" prefHeight="76.0" prefWidth="584.0" style="-fx-border-color: CCCCCC;" />
+            <Label layoutX="29.0" layoutY="322.0" prefHeight="15.0" prefWidth="182.0" text="답변 내용" textFill="#666666">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lab_ans_date" layoutX="101.0" layoutY="325.0" prefHeight="15.0" prefWidth="182.0" text="답변 날짜" textFill="#cccccc" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btn_ok" layoutX="310.0" layoutY="520.0" prefHeight="33.0" prefWidth="80.0" style="-fx-background-color: #4db26f; -fx-background-radius: 20;" text="확 인" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

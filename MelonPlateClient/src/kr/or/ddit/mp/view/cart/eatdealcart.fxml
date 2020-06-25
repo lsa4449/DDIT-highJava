@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1080.0" style="-fx-background-color: ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.cart.CartMainController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@eatdealcart.png" />
+         </image>
+      </ImageView>
+      <Pagination fx:id="page_cart" layoutX="297.0" layoutY="274.0" prefHeight="407.0" prefWidth="450.0" style="-fx-background-color: ffde78;" />
+      <TableView fx:id="tb_cartlist" layoutX="297.0" layoutY="276.0" prefHeight="349.0" prefWidth="450.0" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;">
+        <columns>
+          <TableColumn fx:id="col_cartno" prefWidth="86.0" style="-fx-alignment: CENTER;" text="번호" />
+          <TableColumn fx:id="col_dealname" prefWidth="213.0" style="-fx-alignment: CENTER;" text="eat딜 이름" />
+            <TableColumn fx:id="col_cartdate" prefWidth="145.0" style="-fx-alignment: CENTER;" text="장바구니 등록 날짜" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_dealdel" layoutX="658.0" layoutY="246.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="53.0" style="-fx-background-color: transparent;" text="  " textFill="#4db26f" />
+      <Button fx:id="btn_dealbuy" layoutX="568.0" layoutY="246.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="53.0" style="-fx-background-color: transparent;" text="    " textFill="#4db26f" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane
+	fx:controller="kr.or.ddit.view.join.JoinController"
+	maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="668.0" prefWidth="812.0"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Text layoutX="90.0" layoutY="81.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="성명 " />
+		<Text layoutX="91.0" layoutY="125.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="아이디" />
+		<Text layoutX="91.0" layoutY="172.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="비밀번호" />
+		<Text layoutX="92.0" layoutY="207.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="비밀번호 확인" />
+		<Text layoutX="91.0" layoutY="250.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="닉네임" />
+		<Text layoutX="91.0" layoutY="288.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="이메일" />
+		<Text layoutX="91.0" layoutY="329.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="이메일 인증 번호" />
+		<Text layoutX="99.0" layoutY="371.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="성별" />
+		<Text layoutX="97.0" layoutY="419.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="전화번호" />
+		<Text layoutX="91.0" layoutY="520.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="주소" />
+		<JFXTextField fx:id="textName" layoutX="242.0"
+			layoutY="61.0" />
+		<JFXTextField fx:id="textId" layoutX="242.0"
+			layoutY="115.0" />
+		<JFXTextField fx:id="textPass1" layoutX="242.0"
+			layoutY="152.0" />
+		<JFXTextField fx:id="textPass2" layoutX="242.0"
+			layoutY="197.0" />
+		<JFXTextField fx:id="textNickName" layoutX="242.0"
+			layoutY="230.0" />
+		<JFXTextField fx:id="textEamil" layoutX="242.0"
+			layoutY="268.0" />
+		<JFXTextField fx:id="textEmailCheck" layoutX="242.0"
+			layoutY="309.0" />
+		<JFXTextField fx:id="textPhoneNumber" layoutX="234.0"
+			layoutY="409.0" />
+		<JFXTextField fx:id="textZip" layoutX="234.0"
+			layoutY="500.0" text="우편번호" />
+		<JFXTextField fx:id="textAddr" layoutX="234.0"
+			layoutY="557.0" text="도로명 주소" />
+		<JFXTextField fx:id="textAddrDetail" layoutX="406.0"
+			layoutY="557.0" text="상세주소" />
+		<JFXButton layoutX="449.0" layoutY="114.0" text="중복 확인" />
+		<JFXButton fx:id="btnEmailSend" layoutX="449.0"
+			layoutY="268.0" text="이메일 인증 보내기" />
+		<JFXButton fx:id="btnJoin" layoutX="242.0" layoutY="618.0"
+			text="회원 가입" />
+		<JFXButton fx:id="btnCancle" layoutX="381.0" layoutY="618.0"
+			text="취소" />
+		<JFXRadioButton fx:id="rMale" layoutX="234.0"
+			layoutY="365.0" text="남자" />
+		<JFXRadioButton fx:id="rFemale" layoutX="322.0"
+			layoutY="366.0" text="여자" />
+		<JFXButton fx:id="btnEmailCheck" layoutX="458.0"
+			layoutY="320.0" text="인증 번호 확인" />
+	</children>
+</AnchorPane>

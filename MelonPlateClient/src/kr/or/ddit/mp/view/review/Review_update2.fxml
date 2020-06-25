@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ap_write" prefHeight="800.0" prefWidth="628.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="35.0" layoutY="57.0" prefHeight="686.0" prefWidth="569.0" style="-fx-border-color: #4db26f;">
+         <children>
+            <Text fill="#4db26f" layoutX="21.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#리뷰 수정하기" wrappingWidth="225.564453125">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <JFXTextArea fx:id="txta_upcont" layoutX="51.0" layoutY="104.0" prefHeight="267.0" prefWidth="300.0" style="-fx-border-color: CCCCCC;">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXTextArea>
+            <JFXButton fx:id="btn_upphoto" layoutX="364.0" layoutY="61.0" prefHeight="33.0" prefWidth="87.0" style="-fx-background-color: #4db26f;" text="사진 첨부" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Text fill="#4db26f" layoutX="52.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="평점을 선택해주세요 :)">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btn_upfinish" layoutX="167.0" layoutY="604.0" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #4db26f; -fx-background-radius: 40;" text="수 정" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_cancel" layoutX="312.0" layoutY="604.0" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: FFFFFF; -fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: #4db26f;" text="취 소">
+			<!-- 취소버튼 누르면 실행되는 것 // onMouseClicked="#back" -->
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtf_uptitle" layoutX="51.0" layoutY="60.0" prefHeight="34.0" prefWidth="300.0" style="-fx-border-color: CCCCCC;">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXTextField>
+            <JFXRadioButton fx:id="radbtn_good" layoutX="51.0" layoutY="427.0" text="맛있어요!" textFill="#999999" userData="3">
+               <toggleGroup>
+                  <ToggleGroup fx:id="radiGroup" />
+               </toggleGroup></JFXRadioButton>
+            <ImageView fx:id="img_good" fitHeight="60.0" fitWidth="70.0" layoutX="81.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true" userData="2">
+               <image>
+                  <Image url="@happy.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img_soso" fitHeight="60.0" fitWidth="70.0" layoutX="192.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true" userData="1">
+               <image>
+                  <Image url="@so.PNG" />
+               </image>
+            </ImageView>
+            <JFXRadioButton fx:id="radbtn_soso" layoutX="173.0" layoutY="427.0" text="보통이예요" textFill="#999999" />
+            <ImageView fx:id="img_bad" fitHeight="60.0" fitWidth="70.0" layoutX="315.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@shouting.PNG" />
+               </image>
+            </ImageView>
+            <JFXRadioButton fx:id="radbtn_bad" layoutX="310.0" layoutY="427.0" text="별로.." textFill="#999999" />
+            <JFXTextField fx:id="txtf_filepath" focusColor="#4db26f" layoutX="364.0" layoutY="104.0" prefHeight="27.0" prefWidth="164.0" style="-fx-border-color: CCCCCC;" />
+            <Text layoutX="14.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="제 목" />
+            <Text layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="내 용" />
+            <ImageView fx:id="img_save" fitHeight="147.0" fitWidth="164.0" layoutX="364.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

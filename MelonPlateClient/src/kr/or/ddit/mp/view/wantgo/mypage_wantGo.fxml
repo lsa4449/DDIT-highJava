@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anpane_wantgo" prefHeight="1000.0" prefWidth="1080.0" style="-fx-background-color: #ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.wantgo.WantgoMypageController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mypage_wantGo.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tb_wantGo" layoutX="173.0" layoutY="175.0" prefHeight="324.0" prefWidth="734.0">
+        <columns>
+          <TableColumn fx:id="col_wantNo" prefWidth="66.0" style="-fx-alignment: CENTER;" text="번호" />
+          <TableColumn fx:id="col_wantName" prefWidth="201.0" style="-fx-alignment: CENTER;" text="맛집 이름" />
+            <TableColumn fx:id="col_wantAdd" prefWidth="323.0" style="-fx-alignment: CENTER;" text="주소" />
+            <TableColumn fx:id="col_wantDate" prefWidth="137.0" style="-fx-alignment: CENTER;" text="등록날짜" />
+        </columns>
+      </TableView>
+      <Pagination fx:id="page_wantGo" layoutX="173.0" layoutY="175.0" prefHeight="384.0" prefWidth="734.0" />
+      <JFXButton fx:id="btn_wantDel" alignment="CENTER" layoutX="841.0" layoutY="584.0" onAction="#ac_delwantgo" prefHeight="40.0" prefWidth="60.0" ripplerFill="#4db06e" text="   ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

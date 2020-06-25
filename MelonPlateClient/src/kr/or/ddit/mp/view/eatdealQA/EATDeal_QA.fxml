@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ap_home" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.eatdealQA.EatdealQAController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1280.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@eatdealQA.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="103.0" layoutY="134.0" prefHeight="544.0" prefWidth="1049.0">
+         <children>
+            <TableView fx:id="tb_QAnotice" layoutX="58.0" layoutY="56.0" prefHeight="413.0" prefWidth="935.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;">
+              <columns>
+                  <TableColumn fx:id="col_qa_no" minWidth="50.0" prefWidth="73.0" text="번호" style="-fx-alignment: CENTER;"/>
+                <TableColumn fx:id="col_qa_title" minWidth="100.0" prefWidth="472.0" text="제목" style="-fx-alignment: CENTER;"/>
+                <TableColumn fx:id="col_qa_writer" minWidth="50.0" prefWidth="132.0" text="작성자" style="-fx-alignment: CENTER;"/>
+      				<TableColumn fx:id="col_qa_date" minWidth="50.0" prefWidth="122.0" text="날짜" style="-fx-alignment: CENTER;"/>
+                  <TableColumn fx:id="col_qa_status" minWidth="50.0" prefWidth="134.0" text="답변 여부" style="-fx-alignment: CENTER;"/>
+              </columns>
+            </TableView>
+            <Pagination fx:id="page_qa" layoutX="57.0" layoutY="49.0" prefHeight="488.0" prefWidth="935.0" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btn_qaWrite" layoutX="999.0" layoutY="89.0" prefHeight="34.0" prefWidth="105.0" text=" " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

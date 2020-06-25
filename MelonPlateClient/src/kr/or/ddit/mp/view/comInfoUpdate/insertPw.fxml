@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="an_comInfo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1080.0" style="-fx-background-color: ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.comInfoUpdate.InsertPwController">
+   <children>
+      <ImageView fitHeight="253.0" fitWidth="429.0" layoutX="349.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Infocom.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btn_checkPw" layoutX="597.0" layoutY="339.0" onAction="#checkPw" prefHeight="23.0" prefWidth="46.0" ripplerFill="WHITE" text="   " textFill="#4db26f" />
+      <JFXButton fx:id="btn_cancle" layoutX="653.0" layoutY="339.0" prefHeight="23.0" prefWidth="46.0" ripplerFill="WHITE" text="      " textFill="#4db26f" />
+      <JFXPasswordField fx:id="txtf_pw" focusColor="#cdb270" layoutX="433.0" layoutY="276.0" prefHeight="36.0" prefWidth="266.0" />
+   </children>
+</AnchorPane>

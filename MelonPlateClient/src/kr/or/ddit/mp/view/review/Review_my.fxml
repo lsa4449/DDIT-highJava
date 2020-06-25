@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ap_home" prefHeight="800.0" prefWidth="1080.0" style="-fx-background-color: ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.review.ReviewMyController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1080.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@reviewMy.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="an_in" layoutX="40.0" layoutY="65.0" prefHeight="686.0" prefWidth="1001.0">
+         <children>
+            <TableView fx:id="tb_myReview" layoutX="38.0" layoutY="66.0" prefHeight="395.0" prefWidth="911.0">
+              <columns>
+                <TableColumn fx:id="col_reNo" prefWidth="80.0" text="번호" style="-fx-alignment: CENTER;"/>
+                <TableColumn fx:id="col_reCom" prefWidth="122.0" text="업체" style="-fx-alignment: CENTER;"/>
+                <TableColumn fx:id="col_reTitle" prefWidth="160.0" text="제목" style="-fx-alignment: CENTER;"/>
+                <TableColumn fx:id="col_reCont" prefWidth="330.0" text="내용" style="-fx-alignment: CENTER;"/>
+                <TableColumn fx:id="col_reDate" prefWidth="130.0" text="날짜" style="-fx-alignment: CENTER;"/>
+                <TableColumn fx:id="col_reScore" prefWidth="100.0" text="평점" style="-fx-alignment: CENTER;"/>
+              </columns>
+            </TableView>
+            <Pagination fx:id="page_myReview" layoutX="37.0" layoutY="64.0" prefHeight="467.0" prefWidth="911.0" />
+            <JFXButton fx:id="btn_update" layoutX="808.0" layoutY="15.0" prefHeight="23.0" prefWidth="46.0" style="-fx-background-radius: 10;" text="  " textFill="WHITE" />
+            <JFXButton fx:id="btn_del" layoutX="891.0" layoutY="14.0" text="           " textFill="#4db26f" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

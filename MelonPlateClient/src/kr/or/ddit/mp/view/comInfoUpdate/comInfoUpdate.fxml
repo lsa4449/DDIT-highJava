@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="an_comInfo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1080.0" style="-fx-background-color: ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.comInfoUpdate.ComInfoUpdateController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@comInfo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="50.0" layoutY="96.0" prefHeight="588.0" prefWidth="980.0">
+         <children>
+            <JFXButton fx:id="btn_updatePhoto" layoutX="754.0" layoutY="31.0" onAction="#updatePhoto" prefHeight="44.0" prefWidth="117.0" text="  " textFill="#4db26f">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtf_insertComName" focusColor="#4db26f" layoutX="280.0" layoutY="41.0" prefHeight="26.0" prefWidth="250.0" />
+            <JFXTextField fx:id="txtf_insertMenu" focusColor="#4db26f" layoutX="280.0" layoutY="94.0" prefHeight="26.0" prefWidth="250.0" />
+            <JFXTextField fx:id="txtf_insertComTel" focusColor="#4db26f" layoutX="280.0" layoutY="150.0" prefHeight="26.0" prefWidth="250.0" />
+            <JFXButton fx:id="btn_serchAddr" layoutX="518.0" layoutY="196.0" onAction="#serchAddr" prefHeight="29.0" prefWidth="86.0" text="  " textFill="#4db26f">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtf_insertComZipCode" focusColor="#4db26f" layoutX="280.0" layoutY="196.0" prefHeight="26.0" prefWidth="250.0" />
+            <JFXTextField fx:id="txtf_insertComAddr" focusColor="#4db26f" layoutX="280.0" layoutY="251.0" prefHeight="26.0" prefWidth="250.0" />
+            <JFXTextField fx:id="txtf_category" focusColor="#4db26f" layoutX="280.0" layoutY="308.0" prefHeight="26.0" prefWidth="250.0" />
+            <JFXTextField fx:id="txtf_insertKeyWord" focusColor="#4db26f" layoutX="280.0" layoutY="361.0" prefHeight="26.0" prefWidth="250.0" />
+            <JFXComboBox fx:id="com_parking" focusColor="#4db26f" layoutX="280.0" layoutY="417.0" prefHeight="23.0" prefWidth="250.0" promptText="주차가능여부" />
+            <JFXComboBox fx:id="com_open" focusColor="#4db26f" layoutX="280.0" layoutY="471.0" prefHeight="23.0" prefWidth="250.0" promptText="오픈시간" />
+            <JFXComboBox fx:id="com_close" focusColor="#4db26f" layoutX="280.0" layoutY="523.0" prefHeight="23.0" prefWidth="250.0" promptText="마감시간" />
+            <JFXButton fx:id="btn_updateComplete" layoutX="697.0" layoutY="569.0" onAction="#updateComplete" prefHeight="29.0" prefWidth="86.0" text="  " textFill="#4db26f">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_updateCancle" layoutX="824.0" layoutY="568.0" onAction="#updateCancle" prefHeight="29.0" prefWidth="86.0" text="  " textFill="#4db26f">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

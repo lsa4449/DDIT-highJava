@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="an_adminMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1080.0" style="-fx-background-color: ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.admin.HolicController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="1072.0" layoutX="7.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@admin_holic.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableview" layoutX="65.0" layoutY="151.0" prefHeight="499.0" prefWidth="951.0" style="-fx-background-color: transparent;">
+        <columns>
+          <TableColumn fx:id="tb_holicName" prefWidth="153.0" text="이름" style="-fx-alignment: CENTER;"/>
+          <TableColumn fx:id="tb_holicNick" prefWidth="144.0" text="닉네임" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="tb_holicHp" prefWidth="182.0" text="연락처" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="tb_holicMelon" prefWidth="159.0" text="멜로니지" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="tb_holicRe" prefWidth="140.0" text="리뷰갯수" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="tb_holicReUp" prefWidth="164.0" text="추천수" style="-fx-alignment: CENTER;"/>
+            
+        </columns>
+      </TableView>
+      <Pagination fx:id="page_allMember" layoutX="66.0" layoutY="149.0" prefHeight="546.0" prefWidth="951.0" />
+      <Button fx:id="btn_holicCheck" layoutX="943.0" layoutY="117.0" mnemonicParsing="false" onAction="#holicCheck" prefHeight="18.0" prefWidth="73.0" style="-fx-background-color: transparent;" textFill="#4db26f" />
+      <Button fx:id="btn_downGrade" layoutX="861.0" layoutY="117.0" mnemonicParsing="false" onAction="#downGrade" prefHeight="21.0" prefWidth="73.0" style="-fx-background-color: transparent;" textFill="#4db26f" />
+   </children>
+</AnchorPane>

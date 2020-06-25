@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="179.0" prefWidth="408.0" style="-fx-background-color: ffffff; " xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lab_real" layoutX="46.0" layoutY="35.0" prefHeight="54.0" prefWidth="316.0" style="-fx-background-color: ffffff;" text="결제를 취소하고 환불 받으시겠습니까?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_payback" layoutX="79.0" layoutY="101.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" text="결제취소">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="-170.0" layoutY="-68.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="btn_back" layoutX="232.0" layoutY="101.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" text="돌아가기">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

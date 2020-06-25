@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ap_home" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.review.ReviewHomeController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1280.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@reviewAll.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="140.0" layoutY="72.0" prefHeight="686.0" prefWidth="1001.0">
+         <children>
+            <TableView fx:id="tb_review" layoutX="34.0" layoutY="88.0" prefHeight="292.0" prefWidth="935.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;">
+              <columns>
+                <TableColumn fx:id="col_reWriter" minWidth="50.0" prefWidth="96.0" text="작성자" style="-fx-alignment: CENTER;"/>
+                <TableColumn fx:id="col_reTitle" minWidth="100.0" prefWidth="213.0" text="제목" style="-fx-alignment: CENTER;" />
+				<TableColumn fx:id="col_reCont" minWidth="100.0" prefWidth="283.0" text="내용" style="-fx-alignment: CENTER;"/>
+				<TableColumn fx:id="col_redate" minWidth="15.0" prefWidth="123.0" text="날짜" style="-fx-alignment: CENTER;" />
+                  <TableColumn fx:id="col_reScore" minWidth="50.0" prefWidth="70.0" text="평점" style="-fx-alignment: CENTER;" />
+                  <TableColumn fx:id="col_reUp" minWidth="50.0" prefWidth="66.0" text="추천수" style="-fx-alignment: CENTER;"/>
+                  <TableColumn fx:id="col_reDown" minWidth="50.0" prefWidth="76.0" text="신고수" style="-fx-alignment: CENTER;"/>
+              </columns>
+            </TableView>
+            <Pagination fx:id="page_Review" layoutX="33.0" layoutY="81.0" prefHeight="356.0" prefWidth="935.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" />
+            <JFXButton fx:id="btn_write" layoutX="879.0" layoutY="6.0" prefHeight="30.0" prefWidth="89.0" text="  " textFill="WHITE" />
+            <Text fx:id="txt_title" layoutX="301.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="제목" wrappingWidth="288.0" />
+            <Text fx:id="txt_cont" layoutX="301.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="내용" wrappingWidth="230.0" />
+            <ImageView fx:id="img_score" fitHeight="48.0" fitWidth="54.0" layoutX="495.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="txt_nick" layoutX="202.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="닉네임" wrappingWidth="74.0" />
+            <ImageView fx:id="img_user" fitHeight="54.0" fitWidth="57.0" layoutX="202.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@who.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="txt_date" fill="#cccccc" layoutX="300.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="날짜" wrappingWidth="288.0" />
+            <ImageView fx:id="img_down" fitHeight="30.0" fitWidth="38.0" layoutX="391.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@review_down.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img_up" fitHeight="30.0" fitWidth="38.0" layoutX="301.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@review_up.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="txt_up" layoutX="334.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="추천수" wrappingWidth="44.0" />
+            <Text fx:id="txt_down" layoutX="423.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="신고수" wrappingWidth="44.0" />
+            <JFXButton fx:id="btn_down" layoutX="293.0" layoutY="632.0" prefHeight="23.0" prefWidth="50.0" text="    " textFill="#4db26f" />
+            <JFXButton fx:id="btn_up" layoutX="183.0" layoutY="630.0" prefHeight="25.0" prefWidth="63.0" text="    " textFill="WHITE" />
+            <ImageView fx:id="img_de_review" fitHeight="130.0" fitWidth="173.0" layoutX="623.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true" />
+            <Line endX="700.0" layoutX="195.0" layoutY="444.0" startX="-100.0" stroke="#4db26f" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

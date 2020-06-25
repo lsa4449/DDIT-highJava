@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1080.0" style="-fx-background-color: #ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.buylist.BuylistMainController">
+   <children>
+      <ImageView fitHeight="84.0" fitWidth="723.0" layoutX="179.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buylist.png" />
+         </image>
+      </ImageView>
+      <Pagination fx:id="page_buylist" layoutX="189.0" layoutY="237.0" prefHeight="471.0" prefWidth="703.0" style="-fx-background-color: ffde78;" />
+      <TableView fx:id="tb_allbuylist" layoutX="189.0" layoutY="237.0" prefHeight="425.0" prefWidth="703.0" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;">
+        <columns>
+          <TableColumn fx:id="col_no" prefWidth="75.0" style="-fx-alignment: CENTER;" text="번호" />
+            <TableColumn fx:id="col_st" prefWidth="83.0" style="-fx-alignment: CENTER;" text="상태" />
+          <TableColumn fx:id="col_name" prefWidth="220.0" style="-fx-alignment: CENTER;" text="구매 품목" />
+            <TableColumn fx:id="col_cnt" minWidth="0.0" prefWidth="63.0" style="-fx-alignment: CENTER;" text="수량" />
+            <TableColumn fx:id="col_price" minWidth="0.0" prefWidth="113.0" style="-fx-alignment: CENTER;" text="금액" />
+            <TableColumn fx:id="col_buydate" prefWidth="141.0" style="-fx-alignment: CENTER;" text="구매 날짜" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_return" layoutX="827.0" layoutY="199.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="65.0" style="-fx-background-color: transparent;" text="        " textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

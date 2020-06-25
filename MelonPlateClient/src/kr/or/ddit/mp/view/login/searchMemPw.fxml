@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="299.0" prefWidth="401.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.login.SearchMemPw_Controller">
+   <children>
+      <ImageView fitHeight="299.0" fitWidth="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="login/pas_sear.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_find" layoutX="180.0" layoutY="211.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" text="찾기" textFill="#4db26f" />
+      <TextField fx:id="txtf_name" layoutX="144.0" layoutY="143.0" prefHeight="23.0" prefWidth="201.0" promptText="이름을 입력하여주십시오" />
+      <TextField fx:id="txtf_hp" layoutX="144.0" layoutY="174.0" prefHeight="23.0" prefWidth="201.0" promptText="-을제외한 번호를 입력해주십시오" />
+      <TextField fx:id="txtf_id" layoutX="144.0" layoutY="111.0" prefHeight="23.0" prefWidth="201.0" promptText="아이디를 입력하여주십시오" />
+   </children>
+</AnchorPane>

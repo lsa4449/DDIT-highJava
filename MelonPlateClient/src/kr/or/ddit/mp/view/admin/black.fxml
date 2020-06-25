@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="an_adminMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1080.0" style="-fx-background-color: ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.admin.BlackController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="1072.0" layoutX="6.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@admin_black_top.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableview" layoutX="65.0" layoutY="151.0" prefHeight="499.0" prefWidth="951.0" style="-fx-background-color: transparent;">
+        <columns>
+          <TableColumn fx:id="tb_blackName" prefWidth="200.0" text="이름" style="-fx-alignment: CENTER;"/>
+          <TableColumn fx:id="tb_blackId" prefWidth="291.0" text="아이디" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="tb_blackHp" prefWidth="255.0" text="연락처" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="tb_countNoShow" minWidth="0.0" prefWidth="196.0" text="노쇼횟수" style="-fx-alignment: CENTER;"/>
+            
+        </columns>
+      </TableView>
+      <Button fx:id="btn_deleteBlack" layoutX="879.0" layoutY="117.0" mnemonicParsing="false" onAction="#deleteBlack" prefHeight="23.0" prefWidth="64.0" style="-fx-background-color: transparent;" textFill="#4db26f" />
+      <Button fx:id="btn_blackCheck" layoutX="961.0" layoutY="117.0" mnemonicParsing="false" onAction="#blackCheck" prefHeight="23.0" prefWidth="52.0" style="-fx-background-color: transparent;" textFill="#4db26f" />
+      <Pagination fx:id="page_allMember" layoutX="66.0" layoutY="149.0" prefHeight="546.0" prefWidth="951.0" style="-fx-background-color: transparent;" />
+   </children>
+</AnchorPane>

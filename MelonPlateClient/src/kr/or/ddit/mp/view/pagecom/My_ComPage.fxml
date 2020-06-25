@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainBorder" prefHeight="1000.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.pagecom.MyComPageController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="1000.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@my_com.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_com_info" layoutX="36.0" layoutY="244.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btn_com_eatdeal" layoutX="36.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btn_com_eatQA" layoutX="36.0" layoutY="376.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btn_com_resOp" layoutX="36.0" layoutY="465.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btn_com_resManage" layoutX="36.0" layoutY="491.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btn_com_nice" layoutX="36.0" layoutY="525.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btn_com_my" layoutX="36.0" layoutY="281.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+            <Button fx:id="btn_com_eatsales" layoutX="36.0" layoutY="402.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: transparent;" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="1000.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@mypage_center.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <ImageView fitHeight="281.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@mypage_top.png" />
+         </image>
+      </ImageView>
+   </top>
+</BorderPane>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="goodcom_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1034.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.join.ComJoin_Controller">
+   <children>
+      <ImageView fitHeight="148.0" fitWidth="236.0" layoutX="536.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="login/logoMelonPlate3.png" />
+         </image>
+      </ImageView>
+      <Line endX="500.0" layoutX="626.0" layoutY="181.0" startX="-500.0" stroke="#4db06e" strokeLineCap="ROUND" />
+      <Label layoutX="123.0" layoutY="194.0" text="업체회원 가입" textFill="#4db26f">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="266.0" text="이메일 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtf_email" layoutX="268.0" layoutY="266.0" prefHeight="28.0" prefWidth="249.0" promptText="이메일 형식으로 입력하여 주세요" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Button fx:id="btn_idchk" layoutX="531.0" layoutY="265.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="73.0" text="중복확인" />
+      <Label layoutX="162.0" layoutY="305.0" text="비밀번호 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtf_pw" layoutX="268.0" layoutY="306.0" prefHeight="28.0" prefWidth="249.0" promptText="영문+숫자+특수문자 조합 최소 8자리" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Label layoutX="116.0" layoutY="346.0" text="비밀번호 확인 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtf_pw2" layoutX="268.0" layoutY="345.0" prefHeight="28.0" prefWidth="249.0" promptText="영문+숫자+특수문자 조합 최소 8자리" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Label layoutX="202.0" layoutY="386.0" text="이름 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtf_name" layoutX="268.0" layoutY="385.0" prefHeight="28.0" prefWidth="249.0" promptText="사용자의 이름을 정확하게 입력해 주세요" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Label layoutX="162.0" layoutY="426.0" text="생년월일 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtf_birth" layoutX="268.0" layoutY="425.0" prefHeight="28.0" prefWidth="249.0" promptText="1994년12월18일-&gt;941218" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <TextField fx:id="txtf_phone" layoutX="269.0" layoutY="466.0" prefHeight="28.0" prefWidth="249.0" promptText="'-'을 빼고 입력하시오 ex) 01012345678" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Label layoutX="142.0" layoutY="467.0" text="핸드폰번호 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="506.0" text="닉네임 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtf_nick" layoutX="269.0" layoutY="504.0" prefHeight="28.0" prefWidth="249.0" promptText="한글만입력가능합니다." style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Button fx:id="btn_nickchk" layoutX="533.0" layoutY="505.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="73.0" text="중복확인" />
+      <Label layoutX="162.0" layoutY="542.0" text="우편번호 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtf_zipcode" layoutX="269.0" layoutY="540.0" prefHeight="28.0" prefWidth="249.0" promptText="우측의 우편찾기 버튼을 클릭해주세요" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Button fx:id="btn_findzip" layoutX="534.0" layoutY="540.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="93.0" text="우편번호 찾기" />
+      <Label layoutX="162.0" layoutY="584.0" text="상세주소 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtf_addr" layoutX="269.0" layoutY="583.0" prefHeight="28.0" prefWidth="249.0" promptText="상세 주소를 입력하세요" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Button fx:id="btn_submit" layoutX="506.0" layoutY="867.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="93.0" text="가입" />
+      <Button fx:id="btn_cancel" layoutX="663.0" layoutY="867.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="93.0" text="취소" />
+      <Button fx:id="btn_codechk" layoutX="758.0" layoutY="807.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="93.0" text="확인" />
+      <Label layoutX="502.0" layoutY="759.0" text="*좌측 화면에 보이는 문자를 정확하게 입력해주세요." textFill="#4db26f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtf_codechk" layoutX="502.0" layoutY="807.0" prefHeight="28.0" prefWidth="249.0" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <ImageView fx:id="img_auto" fitHeight="123.0" fitWidth="236.0" layoutX="244.0" layoutY="752.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            
+         </image></ImageView>
+      <TextField fx:id="txtf_category" layoutX="789.0" layoutY="453.0" prefHeight="28.0" prefWidth="249.0" promptText="ex) 양식" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <TextField fx:id="txtf_addr1" layoutX="789.0" layoutY="417.0" prefHeight="28.0" prefWidth="249.0" promptText="상세 주소를 입력하세요" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <TextField fx:id="txtf_comzipcode" layoutX="789.0" layoutY="382.0" prefHeight="28.0" prefWidth="249.0" promptText="우측의 우편찾기 버튼을 클릭해주세요" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Label layoutX="253.0" layoutY="727.0" text="자동가입 방지">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtf_comtel" layoutX="789.0" layoutY="342.0" prefHeight="28.0" prefWidth="249.0" promptText="'-'을 빼고 입력하시오 ex) 0421231234" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Label layoutX="680.0" layoutY="381.0" text="우편번호 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_findcomzip" layoutX="1051.0" layoutY="382.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="93.0" text="우편번호 찾기" />
+      <TextField fx:id="txtf_comname" layoutX="789.0" layoutY="302.0" prefHeight="28.0" prefWidth="249.0" promptText="ex) 멜플치킨" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Button fx:id="btn_comidchk" layoutX="1051.0" layoutY="266.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="73.0" text="중복확인" />
+      <TextField fx:id="txtf_comid" layoutX="789.0" layoutY="266.0" prefHeight="28.0" prefWidth="249.0" promptText="xxx-xx-xxxxx '-' 포합해서 기입해주세요" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Label layoutX="680.0" layoutY="454.0" text="카테고리 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="680.0" layoutY="418.0" text="상세주소 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="640.0" layoutY="342.0" text="업체전화번호 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="700.0" layoutY="303.0" text="업체명 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="660.0" layoutY="267.0" text="사업자번호 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="700.0" layoutY="493.0" text="키워드 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtf_key" layoutX="789.0" layoutY="492.0" prefHeight="28.0" prefWidth="249.0" promptText="ex) 돈까스,국수,모밀" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <TextField fx:id="txtf_menu" layoutX="789.0" layoutY="528.0" prefHeight="28.0" prefWidth="249.0" promptText="ex) 점심특선 돈까스" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Label layoutX="720.0" layoutY="528.0" prefHeight="21.0" prefWidth="53.0" text="메뉴 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="com_opentime" layoutX="789.0" layoutY="602.0" prefWidth="150.0" promptText="09:00" />
+      <Label layoutX="680.0" layoutY="601.0" prefHeight="25.0" prefWidth="93.0" text="오픈시간 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="680.0" layoutY="634.0" prefHeight="25.0" prefWidth="93.0" text="마감시간 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="com_closetime" layoutX="789.0" layoutY="635.0" prefWidth="150.0" promptText="24:00" />
+      <ComboBox fx:id="com_parking" layoutX="789.0" layoutY="668.0" prefWidth="150.0" promptText="y" />
+      <Label layoutX="640.0" layoutY="667.0" prefHeight="25.0" prefWidth="139.0" text="주차가능여부 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="720.0" layoutY="565.0" prefHeight="21.0" prefWidth="53.0" text="가격 :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtf_foodprice" layoutX="789.0" layoutY="565.0" prefHeight="28.0" prefWidth="249.0" promptText="ex) 10000  = '원' 을 생략해주세요" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" />
+      <Button fx:id="btn_refresh" layoutX="867.0" layoutY="807.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="93.0" text="새로고침" />
+      <Label layoutX="502.0" layoutY="780.0" text="*좌측 이미지가 보이지 않는 경우 우측에 있는 '새로고침' 버튼을 눌러주세요" textFill="#4db26f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

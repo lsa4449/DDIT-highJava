@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="336.0" fitWidth="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@admin_add.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtf_adminId" layoutX="162.0" layoutY="107.0" style="-fx-background-color: transparent; -fx-border-color: #ababab;" />
+      <Button fx:id="btn_finish" layoutX="136.0" layoutY="267.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="57.0" style="-fx-background-color: #247c41; -fx-background-radius: 10;" text="완료" textFill="WHITE" />
+      <PasswordField fx:id="pwf_pw" layoutX="162.0" layoutY="181.0" style="-fx-background-color: transparent; -fx-border-color: #ababab;" />
+      <PasswordField fx:id="pwf_pwCheck" layoutX="162.0" layoutY="217.0" style="-fx-background-color: transparent; -fx-border-color: #ababab;" />
+      <Button fx:id="btn_cancle" layoutX="211.0" layoutY="266.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="57.0" style="-fx-background-color: ffffff; -fx-border-radius: 10; -fx-border-color: #b8b8b8;" text="취소" textFill="#797979" />
+      <TextField fx:id="txtf_adminName" layoutX="162.0" layoutY="144.0" style="-fx-background-color: transparent; -fx-border-color: #ababab;" />
+   </children>
+</AnchorPane>

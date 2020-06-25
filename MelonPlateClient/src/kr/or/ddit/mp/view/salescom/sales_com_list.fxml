@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anpane_sales" prefHeight="1000.0" prefWidth="1080.0" style="-fx-background-color: ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.salescom.SalesComController">
+   <children>
+      <ImageView fitHeight="57.0" fitWidth="804.0" layoutX="137.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@comeatdealchart.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tb_sales" layoutX="161.0" layoutY="251.0" prefHeight="383.0" prefWidth="758.0" style="-fx-base: #ffffff;">
+        <columns>
+          <TableColumn fx:id="col_salNo" prefWidth="74.0" text="번호" style="-fx-alignment: CENTER;"/>
+          <TableColumn fx:id="col_salName" prefWidth="273.0" text="EAT딜 이름" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_salQty" prefWidth="128.0" text="판매개수" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_salPri" prefWidth="140.0" text="개당 가격" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_salTotal" prefWidth="140.0" text="판매총액" style="-fx-alignment: CENTER;"/>
+        </columns>
+      </TableView>
+      <Pagination fx:id="page_sales" layoutX="161.0" layoutY="249.0" prefHeight="441.0" prefWidth="758.0" />
+      <JFXButton fx:id="btn_chart" layoutX="848.0" layoutY="217.0" onAction="#Clickview" prefHeight="28.0" prefWidth="76.0" ripplerFill="WHITE" text="  " textFill="#4db26f" />
+   </children>
+</AnchorPane>

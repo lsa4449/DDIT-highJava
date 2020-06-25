@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ap_zip" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.join.Zipcode_Controller">
+   <children>
+      <Label layoutX="41.0" layoutY="18.0" text="우편번호 검색" textFill="#4db26f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tb_zipcode" layoutX="41.0" layoutY="75.0" prefHeight="283.0" prefWidth="534.0">
+        <columns>
+          <TableColumn fx:id="col_zipcode" prefWidth="121.0" text="우편번호" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_si" prefWidth="129.0" text="시도" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_gu" prefWidth="150.0" text="구군" style="-fx-alignment: CENTER;"/>
+            <TableColumn fx:id="col_dong" prefWidth="133.0" text="동" style="-fx-alignment: CENTER;"/>
+        </columns>
+      </TableView>
+      <TextField fx:id="txtf_dong" layoutX="170.0" layoutY="42.0" prefHeight="23.0" prefWidth="181.0" promptText="동을 입력해 주세요" />
+      <Button fx:id="btn_search" onAction="#search" layoutX="369.0" layoutY="41.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="75.0" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" text="검색" textFill="#4db26f" />
+      <Button fx:id="btn_zip_ok"  onAction="#zip_ok" layoutX="261.0" layoutY="364.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="75.0" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" text="확인" textFill="#4db26f" />
+   </children>
+</AnchorPane>

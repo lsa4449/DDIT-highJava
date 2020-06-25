@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="goodcom_anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1197.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.goodcom.GoodcomHomeController">
+   <children>
+      <ImageView fitHeight="148.0" fitWidth="236.0" layoutX="536.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="logoMelonPlate3.png" />
+         </image>
+      </ImageView>
+      <Line endX="500.0" layoutX="640.0" layoutY="181.0" startX="-500.0" stroke="#4db06e" strokeLineCap="ROUND" />
+      <AnchorPane layoutX="140.0" layoutY="192.0" prefHeight="261.0" prefWidth="1001.0">
+         <children>
+            <ImageView fx:id="imgHome1" fitHeight="232.0" fitWidth="280.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgHome2" fitHeight="400.0" fitWidth="400.0" layoutX="252.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgHome3" fitHeight="232.0" fitWidth="280.0" layoutX="707.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="787.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@review.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_goreview" layoutX="814.0" layoutY="316.0" mnemonicParsing="false" onAction="#gogoreview" prefHeight="66.0" prefWidth="160.0" style="-fx-background-color: transparent;" text=" " />
+            <ImageView fx:id="img_miniCrown" fitHeight="90.0" fitWidth="90.0" layoutX="897.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@crown_mini.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="140.0" layoutY="600.0" prefHeight="78.0" prefWidth="1000.0">
+         <children>
+			<JFXButton fx:id="btn_howWay" layoutX="635.0" layoutY="13.0" onAction="#ac_howWay" prefHeight="40.0" prefWidth="40.0" ripplerFill="#5cd300" style="-fx-border-radius: 15;">
+				<graphic>
+					<ImageView fitHeight="40" fitWidth="40">
+						<image>
+							<Image url="goodcomHome_howtoway.png" />
+						</image>
+					</ImageView>
+				</graphic>
+			</JFXButton> 	
+            <JFXButton fx:id="btn_reserv" layoutX="689.0" layoutY="13.0" onAction="#ac_reserv" prefHeight="40.0" prefWidth="40.0" ripplerFill="#5cd300" style="-fx-border-radius: 15;">
+				<graphic>
+					<ImageView fitHeight="40" fitWidth="40">
+						<image>
+							<Image url="goodcomHome_reserv.png" />
+						</image>
+					</ImageView>
+				</graphic>   
+			</JFXButton>              
+            <JFXButton fx:id="btn_wishCom" layoutX="744.0" layoutY="13.0" onAction="#ac_wishCom" prefHeight="40.0" prefWidth="40.0" ripplerFill="#5cd300" style="-fx-border-radius: 15;">
+				<graphic>
+					<ImageView fitHeight="40" fitWidth="40">
+						<image>
+							<Image url="goodcomHome_wantgo.png" />
+						</image>
+					</ImageView>
+				</graphic>      
+			</JFXButton>      
+            <Text fill="#0d8d2d" layoutX="20.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Text>
+            <Text fx:id="txt_comName" fill="#0d8d2d" layoutX="59.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="맛집이름">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imgWeather" fitHeight="40.0" fitWidth="138.0" layoutX="801.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="txt_c" layoutX="865.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+            	<font>
+                  <Font name="System" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imgMise" fitHeight="40.0" fitWidth="90.0" layoutX="900.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anpane_map" layoutX="792.0" layoutY="688.0" maxHeight="283.0" maxWidth="349.0" prefHeight="283.0" prefWidth="349.0" />
+      <AnchorPane layoutX="792.0" layoutY="1008.0" prefHeight="109.0" prefWidth="349.0" style="-fx-background-color: ecebe6;">
+         <children>
+            <Text fx:id="txt_searchWord1" fill="#2a8a24" layoutX="47.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="txt_searchWord2" fill="#2a8a24" layoutX="193.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="txt_searchWord3" fill="#2a8a24" layoutX="165.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="txt_searchWord4" fill="#2a8a24" layoutX="35.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="txt_searchWord5" fill="#2a8a24" layoutX="193.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="140.0" layoutY="688.0" prefHeight="429.0" prefWidth="641.0">
+         <children>
+            <ImageView fitHeight="430.0" fitWidth="642.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@comhomeInfo.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER_RIGHT" layoutX="41.0" layoutY="51.0" spacing="10.0" />
+            <VBox alignment="CENTER" layoutX="158.0" layoutY="51.0" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="txtf_comName" layoutX="164.0" layoutY="40.0" prefHeight="30.0" prefWidth="443.0" unFocusColor="#b1b1b1">
+                     <focusColor>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#b1b1b1" />
+                              <Stop color="#b1b1b1" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </focusColor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtf_comAddr1" layoutX="164.0" layoutY="77.0" prefHeight="30.0" prefWidth="443.0" unFocusColor="#b1b1b1">
+                     <focusColor>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#b1b1b1" />
+                              <Stop color="#b1b1b1" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </focusColor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtf_comAddr2" layoutX="164.0" layoutY="110.0" prefHeight="30.0" prefWidth="443.0" unFocusColor="#b1b1b1">
+                     <focusColor>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#b1b1b1" />
+                              <Stop color="#b1b1b1" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </focusColor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtf_comTel" layoutX="164.0" layoutY="148.0" prefHeight="30.0" prefWidth="443.0" unFocusColor="#b1b1b1">
+                     <focusColor>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#b1b1b1" />
+                              <Stop color="#b1b1b1" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </focusColor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtf_comCate" layoutX="164.0" layoutY="189.0" prefHeight="30.0" prefWidth="443.0" unFocusColor="#b1b1b1">
+                     <focusColor>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#b1b1b1" />
+                              <Stop color="#b1b1b1" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </focusColor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtf_comParking" layoutX="164.0" layoutY="224.0" prefHeight="30.0" prefWidth="443.0" unFocusColor="#b1b1b1">
+                     <focusColor>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#b1b1b1" />
+                              <Stop color="#b1b1b1" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </focusColor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtf_comHour" layoutX="164.0" layoutY="263.0" prefHeight="30.0" prefWidth="443.0" unFocusColor="#b1b1b1">
+                     <focusColor>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#b1b1b1" />
+                              <Stop color="#b1b1b1" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </focusColor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtf_comPickMenu" prefHeight="30.0" prefWidth="443.0" unFocusColor="#b1b1b1">
+                     <focusColor>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#b1b1b1" />
+                              <Stop color="#b1b1b1" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </focusColor>
+                  </JFXTextField>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Text fill="#0d8d2d" layoutX="799.0" layoutY="996.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#이 키워드로도 알아보세요!">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

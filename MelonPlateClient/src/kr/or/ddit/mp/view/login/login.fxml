@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.login.Login_Controller">
+   <children>
+      <ImageView fitHeight="1024.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="login/login_back.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_login" layoutX="759.0" layoutY="450.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="71.0" style="-fx-background-color: ffffff; -fx-border-color: #4db26f;" text="Login" textFill="#4db26f" />
+      <Label alignment="CENTER_RIGHT" layoutX="413.0" layoutY="438.0" prefHeight="60.0" prefWidth="96.0" text="ID : " textAlignment="RIGHT">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="388.0" layoutY="482.0" prefHeight="60.0" prefWidth="121.0" text="PW :">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_join" layoutX="543.0" layoutY="554.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="195.0" style="-fx-background-color: ffffff;" text="E-MAIL로 회원가입" textFill="#4db26f">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_findPw" layoutX="592.0" layoutY="623.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="96.0" style="-fx-background-color: ffffff;" text="비밀번호 찾기" textFill="#4db26f">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_findId" layoutX="590.0" layoutY="590.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="96.0" style="-fx-background-color: ffffff;" text="아이디 찾기" textFill="#4db26f">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtf_id" layoutX="524.0" layoutY="453.0" prefHeight="31.0" prefWidth="223.0" />
+      <PasswordField fx:id="txtf_pw" layoutX="524.0" layoutY="496.0" prefHeight="31.0" prefWidth="223.0" />
+   </children>
+</AnchorPane>

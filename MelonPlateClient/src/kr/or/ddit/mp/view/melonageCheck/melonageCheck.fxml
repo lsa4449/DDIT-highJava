@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1080.0" style="-fx-background-color: ffde78;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.mp.view.melonageCheck.MelonageCheckController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@melonageCheck.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableview" layoutX="66.0" layoutY="141.0" prefHeight="499.0" prefWidth="938.0">
+        <columns>
+            <TableColumn fx:id="tb_status" prefWidth="62.0" style="-fx-alignment: CENTER;" text="상 태" />
+          <TableColumn fx:id="tb_saveList" prefWidth="203.0" style="-fx-alignment: CENTER;" text="적립 및 사용 내역" />
+          <TableColumn fx:id="tb_save" prefWidth="62.0" style="-fx-alignment: CENTER;" text="적 립" />
+            <TableColumn fx:id="tb_used" prefWidth="62.0" style="-fx-alignment: CENTER;" text="사 용" />
+            <TableColumn fx:id="tb_amount" prefWidth="100.0" style="-fx-alignment: CENTER;" text="결제 금액 " />
+            <TableColumn fx:id="tb_indate" prefWidth="227" style="-fx-alignment: CENTER;" text="적립 날짜" />
+            <TableColumn fx:id="tb_update" prefWidth="217.0" style="-fx-alignment: CENTER;" text="사용 날짜" />
+            
+        </columns>
+      </TableView>
+      <Pagination fx:id="page_allMember" layoutX="67.0" layoutY="139.0" prefHeight="546.0" prefWidth="938.0" />
+      <Text fx:id="melonage" fill="#946817" layoutX="227.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.12109375">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane style="-fx-background-color: #ffffff;"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="kr.or.ddit.mp.service.chat.ChatController">
+	<top>
+		<Pane prefHeight="50.0" prefWidth="400.0"
+			style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+			<children>
+				<Label layoutX="29.0" layoutY="13.0" text="# 무엇이든 물어보세요"
+					textFill="#4db26f">
+					<font>
+						<Font size="21.0" />
+					</font>
+				</Label>
+			</children>
+		</Pane>
+	</top>
+	<center>
+		<Pane prefHeight="263.0" prefWidth="400.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<TextArea fx:id="taChatList" layoutX="20.0" layoutY="5.0"
+					prefHeight="245.0" prefWidth="358.0"
+					style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-border-color: #4db26f; -fx-border-radius: 10;" />
+			</children>
+		</Pane>
+	</center>
+	<bottom>
+		<HBox alignment="CENTER" spacing="4.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<TextField fx:id="tfChat" prefHeight="30.0"
+					prefWidth="240.0"
+					style="-fx-background-color: #ffffff; -fx-border-radius: 10; -fx-border-color: #4db26f;" />
+				<Button mnemonicParsing="false" onAction="#sendMessage"
+					prefHeight="29.0" prefWidth="58.0"
+					style="-fx-background-color: #4db26f; -fx-background-radius: 10; -fx-border-color: #4db26f; -fx-border-radius: 10;"
+					text="전송" textFill="WHITE" />
+				<Button mnemonicParsing="false" onAction="#disconnect"
+					prefHeight="29.0" prefWidth="58.0"
+					style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-border-color: #9a9a9a; -fx-border-radius: 10;"
+					text="종료" textFill="#9a9a9a" />
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>
