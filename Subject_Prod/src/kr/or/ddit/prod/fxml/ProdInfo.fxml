@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane
+	fx:controller="kr.or.ddit.prod.controller.ProdController"
+	maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="400.0" prefWidth="1000.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<TableView fx:id="tv" layoutY="82.0" prefHeight="318.0"
+			prefWidth="1000.0">
+			<columns>
+				<TableColumn fx:id="prod_id" prefWidth="130.0"
+					text="PROD_ID" />
+				<TableColumn fx:id="prod_name" prefWidth="202.0"
+					text="PROD_NAME" />
+				<TableColumn fx:id="prod_lgu" prefWidth="83.0"
+					text="PROD_LGU" />
+				<TableColumn fx:id="prod_buyer" minWidth="0.0"
+					prefWidth="97.0" text="PROD_BUYER" />
+				<TableColumn fx:id="prod_cost" prefWidth="81.0"
+					text="PROD_COST" />
+				<TableColumn fx:id="prod_price" prefWidth="84.0"
+					text="PROD_PRICE" />
+				<TableColumn fx:id="prod_sale" prefWidth="87.0"
+					text="PROD_SALE" />
+				<TableColumn fx:id="prod_outline" prefWidth="113.0"
+					text="PROD_OUTLINE" />
+				<TableColumn fx:id="prod_detail"
+					minWidth="0.0
+            " prefWidth="122.0" text="PROD_DETAIL" />
+			</columns>
+		</TableView>
+		<ComboBox fx:id="Cb1" layoutX="304.0" layoutY="56.0"
+			prefWidth="150.0" />
+		<ComboBox fx:id="Cb2" layoutX="480.0" layoutY="56.0"
+			prefWidth="150.0" />
+	</children>
+</AnchorPane>
