@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0"
+	prefWidth="633.0" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.ddit.basic.Member_Test">
+	<children>
+		<Label layoutX="128.0" layoutY="23.0" text="회원ID :" />
+		<Label layoutX="119.0" layoutY="52.0" text="회원이름 :" />
+		<Label layoutX="119.0" layoutY="83.0" text="회원전화 :" />
+		<Label layoutX="119.0" layoutY="114.0" prefHeight="15.0"
+			prefWidth="56.0" text="회원주소 :" />
+		
+		<TextField fx:id="tid" layoutX="188.0" layoutY="19.0" prefHeight="23.0" prefWidth="317.0" />
+		<TextField fx:id="tname" layoutX="188.0" layoutY="48.0"
+			prefHeight="23.0" prefWidth="317.0" />
+		<TextField fx:id="ttel" layoutX="188.0" layoutY="79.0"
+			prefHeight="23.0" prefWidth="317.0" />
+		<TextField fx:id="taddr" layoutX="188.0" layoutY="110.0"
+			prefHeight="23.0" prefWidth="317.0" />
+		
+		<Button fx:id="btnAdd" layoutX="128.0" layoutY="146.0"
+			mnemonicParsing="false" prefHeight="36.0" prefWidth="70.0" text="추 가" />
+		<Button fx:id="btnModify" layoutX="212.0" layoutY="146.0"
+			mnemonicParsing="false" prefHeight="36.0" prefWidth="70.0" text="수 정" />
+		<Button fx:id="btnOk" layoutX="379.0" layoutY="146.0"
+			mnemonicParsing="false" prefHeight="36.0" prefWidth="70.0" text="확 인" />
+		<Button fx:id="btnDelete" layoutX="298.0" layoutY="146.0"
+			mnemonicParsing="false" prefHeight="36.0" prefWidth="70.0" text="삭 제" />
+		<Button fx:id="btnCancel" layoutX="456.0" layoutY="146.0"
+			mnemonicParsing="false" prefHeight="36.0" prefWidth="70.0" text="취 소" />
+		
+		<TableView fx:id="tv" layoutX="19.0" layoutY="201.0"
+			prefHeight="334.0" prefWidth="596.0">
+			<columns>
+				<TableColumn fx:id="table_id" prefWidth="87.0"
+					text="회원ID" />
+				<TableColumn fx:id="table_name" prefWidth="195.0"
+					text="회원이름" />
+				<TableColumn fx:id="table_tel" minWidth="2.0"
+					prefWidth="203.0" text="회원전화" />
+				<TableColumn fx:id="table_addr" minWidth="7.0"
+					prefWidth="110.0" text="회원주소" />
+			</columns>
+		</TableView>
+	</children>
+</AnchorPane>
